@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WithMediator.Services;
 
-IHost host = Host.CreateDefaultBuilder(args)
+await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         //Add mediatR with assembly to scan for Handlers
@@ -14,6 +14,4 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddTransient<ServiceTwo>();
         services.AddTransient<ServiceThree>();
     })
-    .Build();
-
-await host.StartAsync();
+    .RunConsoleAsync();

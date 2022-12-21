@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using WithoutMediator.Services;
 
-IHost host = Host.CreateDefaultBuilder(args)
+await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         //Register service dependencies
@@ -10,6 +10,4 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddTransient<ServiceTwo>();
         services.AddTransient<ServiceThree>();
     })
-    .Build();
-
-await host.StartAsync();
+    .RunConsoleAsync();
