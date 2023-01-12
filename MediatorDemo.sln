@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithMediator", "WithMediator\WithMediator.csproj", "{0ECF1A5B-0D65-422C-8217-AA8F1BA678AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithoutMediator", "WithMediator\WithoutMediator.csproj", "{0ECF1A5B-0D65-422C-8217-AA8F1BA678AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithoutMediator", "WithoutMediator\WithoutMediator.csproj", "{8BD1CDAB-784F-40CC-9F78-021B3AF8CF41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithMediator", "WithoutMediator\WithMediator.csproj", "{8BD1CDAB-784F-40CC-9F78-021B3AF8CF41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
