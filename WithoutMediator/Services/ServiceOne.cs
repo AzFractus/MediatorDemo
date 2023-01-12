@@ -3,9 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MediatR;
 
 namespace WithoutMediator.Services;
 
-internal class ServiceOne
+public class ServiceOne
 {
+    private readonly IMediator _mediator;
+
+    public ServiceOne(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
+    public void DoSomething()
+    {
+        Console.WriteLine($"{nameof(ServiceOne)} executed");
+    }
 }
