@@ -1,4 +1,4 @@
-﻿namespace WithMediator.Services;
+﻿namespace WithoutMediator.Services;
 
 public class ServiceOne
 {
@@ -6,13 +6,13 @@ public class ServiceOne
     private readonly ServiceThree _three;
 
     public ServiceOne(ServiceTwo two, ServiceThree three)
-	{
-		_two = two;
-		_three = three;
-	}
+    {
+        _two = two;
+        _three = three;
+    }
 
-	public void DoSomething()
-	{
-		Console.WriteLine($"{nameof(ServiceOne)} executed");
-	}
+    public void DoSomething()
+    {
+        Console.WriteLine($"{nameof(ServiceOne)} executed");
+    }
 }

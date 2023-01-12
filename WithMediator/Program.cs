@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WithoutMediator.Services;
+using WithMediator.Services;
 
 await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

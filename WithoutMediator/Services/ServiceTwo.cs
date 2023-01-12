@@ -1,4 +1,4 @@
-﻿namespace WithMediator.Services;
+﻿namespace WithoutMediator.Services;
 
 public class ServiceTwo
 {
@@ -6,10 +6,10 @@ public class ServiceTwo
     private readonly ServiceThree _three;
 
     public ServiceTwo(ServiceOne one, ServiceThree three)
-	{
-		_one = one;
-		_three = three;
-	}
+    {
+        _one = one;
+        _three = three;
+    }
 
     public void DoSomething()
     {

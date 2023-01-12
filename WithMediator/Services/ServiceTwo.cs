@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace WithoutMediator.Services;
+namespace WithMediator.Services;
 
 public class ServiceTwo
 {

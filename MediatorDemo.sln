@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithoutMediator", "WithoutM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithMediator", "WithMediator\WithMediator.csproj", "{8BD1CDAB-784F-40CC-9F78-021B3AF8CF41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E396FC57-C9BB-4CB8-9BE6-D56567B2BDBE}"
+	ProjectSection(SolutionItems) = preProject
+		MediatorPattern.md = MediatorPattern.md
+		MediatR.md = MediatR.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
