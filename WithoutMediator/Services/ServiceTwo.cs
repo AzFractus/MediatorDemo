@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
-
-namespace WithoutMediator.Services;
+﻿namespace WithMediator.Services;
 
 public class ServiceTwo
 {
-    private readonly IMediator _mediator;
+    private readonly ServiceOne _one;
+    private readonly ServiceThree _three;
 
-    public ServiceTwo(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
+    public ServiceTwo(ServiceOne one, ServiceThree three)
+	{
+		_one = one;
+		_three = three;
+	}
 
     public void DoSomething()
     {

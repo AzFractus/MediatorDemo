@@ -1,14 +1,14 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WithoutMediator.Services;
+using WithMediator.Services;
 
 await Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        //Register mediatR (Mediator implementation)
+        //Add mediatR with assembly to scan for Handlers
         services.AddMediatR(typeof(Program).Assembly);
-
+        
         //Register service dependencies
         services.AddTransient<ServiceOne>();
         services.AddTransient<ServiceTwo>();

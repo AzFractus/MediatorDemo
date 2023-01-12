@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
-
-namespace WithoutMediator.Services;
+﻿namespace WithMediator.Services;
 
 public class ServiceOne
 {
-    private readonly IMediator _mediator;
+    private readonly ServiceTwo _two;
+    private readonly ServiceThree _three;
 
-    public ServiceOne(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
+    public ServiceOne(ServiceTwo two, ServiceThree three)
+	{
+		_two = two;
+		_three = three;
+	}
 
-    public void DoSomething()
-    {
-        Console.WriteLine($"{nameof(ServiceOne)} executed");
-    }
+	public void DoSomething()
+	{
+		Console.WriteLine($"{nameof(ServiceOne)} executed");
+	}
 }
