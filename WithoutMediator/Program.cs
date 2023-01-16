@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WithoutMediator;
 using WithoutMediator.Services;
 
 await Host.CreateDefaultBuilder(args)
@@ -9,5 +10,7 @@ await Host.CreateDefaultBuilder(args)
         services.AddTransient<ServiceOne>();
         services.AddTransient<ServiceTwo>();
         services.AddTransient<ServiceThree>();
+
+        services.AddHostedService<Worker>();
     })
     .RunConsoleAsync();

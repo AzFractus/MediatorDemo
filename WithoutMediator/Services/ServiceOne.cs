@@ -14,5 +14,8 @@ public class ServiceOne
     public void DoSomething()
     {
         Console.WriteLine($"{nameof(ServiceOne)} executed");
+
+        _two.DoSomething();
+        _three.DoSomething();
     }
 }
