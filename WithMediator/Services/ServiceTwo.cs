@@ -4,11 +4,8 @@ namespace WithMediator.Services;
 
 public class ServiceTwo
 {
-    private readonly IMediator _mediator;
-
-    public ServiceTwo(IMediator mediator)
+    public ServiceTwo()
     {
-        _mediator = mediator;
     }
 
     public void DoSomething()
